@@ -27,7 +27,7 @@ class App extends Component {
 
     handleNewJob(newJob) {
         let jobs = this.state.jobs;
-        jobs.push(newJob);
+        jobs.unshift(newJob);
         this.setState({ jobs: jobs });
     }
 

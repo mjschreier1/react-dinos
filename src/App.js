@@ -6,9 +6,12 @@ import Footer from "./components/footer";
 import "./App.css";
 
 class App extends Component {
-    state = {
-        jobs: [],
-        jobData: false
+    constructor() {
+        super();
+        this.state = {
+            jobs: [],
+            jobData: false
+        }
     }
 
     componentDidMount() {
